@@ -1,0 +1,5 @@
+---
+- name: Texlive science
+  apt: name={{ item }} state=latest update_cache=yes
+  with_items:
+    texlive-science
